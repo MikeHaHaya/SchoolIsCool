@@ -4,5 +4,5 @@ import java.util.ArrayList;
 
 public class School {
 
-    private ArrayList<ClassRoom> classRooms;
+    private final ArrayList<ClassRoom> classRooms = new ArrayList<>(5);
 }

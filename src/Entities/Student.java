@@ -4,6 +4,6 @@ import java.util.ArrayList;
 
 public class Student extends Person{
 
-    private ArrayList<Grade> grades;
+    private final ArrayList<Grade> grades = new ArrayList<>(6);
 
 }

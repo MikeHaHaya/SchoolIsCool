@@ -6,6 +6,6 @@ public class ClassRoom {
 
     private String name;
     private Teacher teacher;
-    private ArrayList<Student> students;
+    private final ArrayList<Student> students = new ArrayList<>(15);
 
 }
