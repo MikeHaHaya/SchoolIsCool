@@ -6,7 +6,13 @@ public class School {
 
     private final ArrayList<ClassRoom> classRooms = new ArrayList<>(5);
 
-    public School() {
+    private School() {
+    }
+
+    private static final School instance = new School();
+
+    public static School getInstance() {
+        return instance;
     }
 
     public ArrayList<ClassRoom> getClassRooms() {
