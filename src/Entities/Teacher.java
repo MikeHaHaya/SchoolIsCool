@@ -5,6 +5,7 @@ public class Teacher extends Person {
     private Grade.Profession profession;
 
     public Teacher() {
+        teacherGenerator();
     }
 
     public Teacher(String name, int age, Grade.Profession profession) {
@@ -28,4 +29,7 @@ public class Teacher extends Person {
     }
 
     //TODO -- Teacher Generator
+    private void teacherGenerator() {
+
+    }
 }
