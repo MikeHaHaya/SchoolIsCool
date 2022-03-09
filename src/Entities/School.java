@@ -7,6 +7,7 @@ public class School {
     private final ArrayList<ClassRoom> classRooms = new ArrayList<>(5);
 
     private School() {
+        schoolGenerator();
     }
 
     private static final School instance = new School();
@@ -28,5 +29,10 @@ public class School {
         return "School{" +
                 "classRooms=" + classRooms +
                 '}';
+    }
+
+    private void schoolGenerator() {
+        for (int i = 0; i < 5; i++)
+            this.classRooms.add(new ClassRoom(i));
     }
 }

@@ -6,6 +6,9 @@ public class Student extends Person{
 
     private final ArrayList<Grade> grades = new ArrayList<>(6);
 
+    public Student() {
+    }
+
     public Student(String name, int age) {
         super(name, age);
     }
@@ -24,4 +27,6 @@ public class Student extends Person{
                 "grades=" + grades +
                 '}';
     }
+
+    //TODO -- Student Generator
 }

@@ -4,6 +4,9 @@ public class Teacher extends Person {
 
     private Grade.Profession profession;
 
+    public Teacher() {
+    }
+
     public Teacher(String name, int age, Grade.Profession profession) {
         super(name, age);
         this.profession = profession;
@@ -23,4 +26,6 @@ public class Teacher extends Person {
                 "profession=" + profession +
                 '}';
     }
+
+    //TODO -- Teacher Generator
 }
