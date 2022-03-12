@@ -4,8 +4,9 @@ public class Teacher extends Person {
 
     private Grade.Profession profession;
 
-    public Teacher() {
-        teacherGenerator();
+    public Teacher(int count) {
+        super();
+        teacherGenerator(count);
     }
 
     public Teacher(String name, int age, Grade.Profession profession) {
@@ -25,11 +26,31 @@ public class Teacher extends Person {
     public String toString() {
         return "Teacher{" +
                 "profession=" + profession +
-                '}';
+                "} " + super.toString();
     }
 
-    //TODO -- Teacher Generator
-    private void teacherGenerator() {
+    private void teacherGenerator(int count) {
 
+        switch (count) {
+            case 0:
+                setProfession(Grade.Profession.MATH);
+                break;
+            case 1:
+                setProfession(Grade.Profession.CHEMISTRY);
+                break;
+            case 2:
+                setProfession(Grade.Profession.GEOGRAPHY);
+                break;
+            case 3:
+                setProfession(Grade.Profession.LITERATURE);
+                break;
+            case 4:
+                setProfession(Grade.Profession.PHYSICS);
+                break;
+            default:
+                setProfession(Grade.Profession.SPORTS);
+                break;
+        }
     }
+
 }

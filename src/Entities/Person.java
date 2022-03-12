@@ -31,6 +31,7 @@ public abstract class Person {
     }
 
     private void personGenerator() {
+
         // name
         int ranName = (int)(Math.random() * 99);
         switch (ranName) {
@@ -240,5 +241,13 @@ public abstract class Person {
         // age
         int ranAge = (int) (Math.random() * (61 - 20) + 20);
         this.setAge(ranAge);
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

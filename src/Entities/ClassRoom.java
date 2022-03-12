@@ -74,7 +74,7 @@ public class ClassRoom {
         }
 
         //teacher
-        this.setTeacher(new Teacher());
+        this.setTeacher(new Teacher(count));
 
         //students
         for (int i = 0; i < 15; i++)

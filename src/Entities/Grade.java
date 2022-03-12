@@ -6,7 +6,7 @@ public class Grade {
     private int score;
 
     public enum Profession {
-        math, chemistry, geography, literature, physics, sports
+        MATH, CHEMISTRY, GEOGRAPHY, LITERATURE, PHYSICS, SPORTS
     }
 
     public Grade(Profession profession, int score) {
